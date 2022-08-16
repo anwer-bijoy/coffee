@@ -197,3 +197,55 @@ header .header-nav {
 .about-content .btn:hover {
   width: 150px;
 }
+
+/* Menu Items CSS starts */
+#menu {
+  background-color: var(--bg-color);
+  padding: 50px 0;
+}
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+.menu-item {
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.menu-item-content {
+  text-align: center;
+  margin-top: 10px;
+}
+.menu-item-content h5 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.menu-item-content h4 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.menu-item-content h4 span {
+  color: rgb(215, 212, 212);
+  font-size: 16px;
+  text-decoration: line-through;
+}
+.menu-item:hover {
+  background-color: #fff;
+}
+.menu-item:hover .menu-item-content h5,
+.menu-item:hover .menu-item-content h4,
+.menu-item:hover .menu-item-content span {
+  color: #424273;
+}
