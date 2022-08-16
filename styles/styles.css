@@ -19,7 +19,21 @@
   width: 80%;
   margin: 0 auto;
 }
-
+.section-title {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.section-title span {
+  color: var(--main-color);
+}
+.btn {
+  color: #fff;
+  background-color: var(--main-color);
+  display: inline-block;
+  padding: 10px 25px;
+}
 /* Header Nav CSS start */
 header .header-nav {
   position: fixed;
@@ -137,16 +151,49 @@ header .header-nav {
   background-color: var(--main-color);
   color: #fff;
   transform: scaleX(1);
-  transition: all linear 0.5s;
-  -webkit-transition: all linear 0.5s;
-  -moz-transition: all linear 0.5s;
-  -ms-transition: all linear 0.5s;
-  -o-transition: all linear 0.5s;
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
+  transition: all linear 0.3s;
 }
 .hero-content a:hover {
   width: 180px;
+}
+
+/* About us section CSS Starts */
+#about-us {
+  background-color: var(--bg-color);
+  padding: 50px 0;
+}
+.about-us-wrapper {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--bg-blue-color);
+}
+.about-img {
+  width: 50%;
+}
+.about-img img {
+  width: 100%;
+}
+.about-content {
+  width: 50%;
+  padding-right: 30px;
+}
+.about-content h3 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.about-content p {
+  color: rgb(228, 224, 224);
+  margin-bottom: 20px;
+}
+.about-content .btn {
+  margin-top: 20px;
+  width: 135px;
+  transform: scaleX(1);
+  transition: all linear 0.3s;
+}
+.about-content .btn:hover {
+  width: 150px;
 }
