@@ -34,6 +34,9 @@
   display: inline-block;
   padding: 10px 25px;
 }
+.ratings i {
+  color: var(--main-color);
+}
 /* Header Nav CSS start */
 header .header-nav {
   position: fixed;
@@ -201,7 +204,7 @@ header .header-nav {
 /* Menu Items CSS starts */
 #menu {
   background-color: var(--bg-color);
-  padding: 50px 0;
+  padding-bottom: 50px;
 }
 .menu-items {
   display: grid;
@@ -248,4 +251,94 @@ header .header-nav {
 .menu-item:hover .menu-item-content h4,
 .menu-item:hover .menu-item-content span {
   color: #424273;
+}
+
+/* Products section CSS starts */
+#products {
+  background-color: var(--bg-color);
+  padding-bottom: 50px;
+}
+.product-items {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.product-item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #fff;
+}
+.product-icons a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 8px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 20px;
+}
+.product-imges {
+  margin-top: 20px;
+}
+.product-content {
+  text-align: center;
+}
+.product-content h5 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.product-content h4 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.product-content h4 span {
+  color: rgb(215, 212, 212);
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+/* Customer Review Section CSS starts */
+#review {
+  background-color: var(--bg-color);
+  padding-bottom: 50px;
+}
+.customer-review {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.single-review {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #fff;
+  text-align: center;
+}
+.review-body p {
+  color: rgb(212, 204, 204);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.review-body img {
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  border-radius: 75px;
+}
+.review-body h5 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
